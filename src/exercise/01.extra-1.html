@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 01 - Extra 1</title>
+</head>
+<body>
+    <script type="module">
+        const root = document.createElement('div');
+        
+        root.id = 'root';
+
+        document.body.appendChild(root);
+
+        const container = document.createElement('div');
+
+        container.className = 'container';
+        container.textContent = 'Hello World';
+         
+        document.getElementById('root').append(container);
+    </script>
+</body>
+</html>
