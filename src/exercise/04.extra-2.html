@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise 04 - Extra 1</title>
+  <title>Exercise 04 - Extra 2</title>
 </head>
 <body>
   <div id="root"></div>
@@ -15,7 +15,7 @@
   <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
   <script type="text/babel">
 
-    function message({ children }) {
+    function Message({ children }) {
       return (
         <div className="message">{children}</div>
       );
@@ -23,8 +23,8 @@
 
     const element = (
       <div className="container">
-        {React.createElement(message, {children: 'Hello World'})}
-        {React.createElement(message, {children: 'Goodbye World'})}
+        <Message>Hello World</Message>
+        <Message>Goodbye World</Message>
       </div>
     )
 
