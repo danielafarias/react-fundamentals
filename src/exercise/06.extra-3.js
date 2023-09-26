@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 function UsernameForm({onSubmitUsername}) {
-  const [username, setUsername] = React.useState();
+  const [username, setUsername] = React.useState('');
 
   const inputRef = React.useRef();
 
